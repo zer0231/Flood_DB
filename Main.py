@@ -14,14 +14,15 @@ print(r.status_code)
 if r.status_code != 200:
     print("\nbhdsk correct url de")
 else:
-    for num in range(100):
+   print("Loading") 
+   while :
         rn_num = random.randint(100, 999)
         first = random.choice(first_names)
         last = random.choice(last_names)
         full_name = first+" "+last
         passw = str(rn_num)+first.lower()
         email = first.lower() + last.lower() + '@gmail.com'
-        rn_data = {'txtname':full_name,'txtemail':email,'txtpassword':passw,'sub':submit}
+        rn_data = {'txtname':full_name,'txtemail':email,'txtpassword':passw}
         x = requests.post(url, data = rn_data)
         print(".\n")
 
