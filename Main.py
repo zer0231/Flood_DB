@@ -15,7 +15,7 @@ if r.status_code != 200:
     print("\nbhdsk correct url de")
 else:
    print("Loading") 
-   while :
+   while True:
         rn_num = random.randint(100, 999)
         first = random.choice(first_names)
         last = random.choice(last_names)
