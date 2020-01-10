@@ -12,7 +12,7 @@ r = requests.get(url)
 print(r.status_code)
 
 if r.status_code != 200:
-    print("\nbhdsk correct url de")
+    print("\nURL refuses")
 else:
    print("Loading") 
    while True:
